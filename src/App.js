@@ -1,20 +1,50 @@
 import './App.css';
-import { Container, Nav, Navbar } from 'react-bootstrap';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Home from './Pages/Home/Home/Home.js';
+import Services from './Pages/Home/Services/Services.js';
+import NotFoundPage from './Pages/NotFoundPage/NotFoundPage.js';
+import Header from './Pages/Shared/Header/Header.js';
+import AboutUs from './Pages/AboutUs/AboutUs.js';
+import Login from './Pages/Login/Login.js';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar bg="dark" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <h1 className="mt-5 text-danger">Welcome to my website</h1>
+      <Router>
+        <Header></Header>
+        <Switch>
+
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+
+          <Route path="/about">
+            <AboutUs></AboutUs>
+          </Route>
+
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+
+          <Route path="*">
+            <NotFoundPage></NotFoundPage>
+          </Route>
+
+        </Switch>
+      </Router>
     </div>
   );
 }
