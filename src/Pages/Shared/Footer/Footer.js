@@ -48,11 +48,11 @@ const Footer = () => {
                         <div>
                             <ul className="list-unstyled mt-3 footer-link">
                                 <li style={{ color: "#396CF0" }} className="list-unstyled fs-4 mb-2 mt-3 fw-bolder">Departments</li>
-                                <li><NavLink to="/home"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Who We Are</span></NavLink></li>
-                                <li><NavLink to="/about"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Our Mission</span></NavLink></li>
-                                <li><NavLink to="/services"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Awards</span></NavLink></li>
-                                <li><NavLink to="/contact"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Experience</span></NavLink></li>
-                                <li><NavLink to=""><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Success Story</span></NavLink></li>
+                                <li><NavLink to="/"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Who We Are</span></NavLink></li>
+                                <li><NavLink to="/"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Our Mission</span></NavLink></li>
+                                <li><NavLink to="/"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Awards</span></NavLink></li>
+                                <li><NavLink to="/"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Experience</span></NavLink></li>
+                                <li><NavLink to="/"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Success Story</span></NavLink></li>
 
                             </ul>
                         </div>
