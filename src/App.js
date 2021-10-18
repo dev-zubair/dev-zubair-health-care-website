@@ -10,11 +10,12 @@ import NotFoundPage from './Pages/NotFoundPage/NotFoundPage.js';
 import Header from './Pages/Shared/Header/Header.js';
 import AboutUs from './Pages/AboutUs/AboutUs.js';
 import Login from './Pages/Login/Login.js';
+import Footer from './Pages/Shared/Footer/Footer.js';
 
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <Router>
         <Header></Header>
         <Switch>
@@ -44,6 +45,7 @@ function App() {
           </Route>
 
         </Switch>
+        <Footer></Footer>
       </Router>
     </div>
   );
