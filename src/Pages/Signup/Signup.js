@@ -1,12 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import {
-    Col,
-    Form,
-    FormControl,
-    InputGroup,
-    Row,
-} from "react-bootstrap";
+import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { faEnvelope, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import './Signup.css';
@@ -29,13 +23,7 @@ const SignUp = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl
-                                    type="text"
-                                    autoComplete="current-text"
-                                    id="name"
-                                    placeholder="Enter your name"
-                                />
-                            </InputGroup>
+                                <FormControl type="text" autoComplete="current-text" id="name" placeholder="Enter your name" /></InputGroup>
                         </Col>
                     </Row>
 
@@ -63,12 +51,7 @@ const SignUp = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl
-                                    type="password"
-                                    autoComplete="current-password"
-                                    id="password"
-                                    placeholder="Enter your password"
-                                />
+                                <FormControl type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
                             </InputGroup>
                         </Col>
                     </Row>

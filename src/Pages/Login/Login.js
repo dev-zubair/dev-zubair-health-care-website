@@ -6,9 +6,13 @@ import './Login.css';
 import google from './../../Assets/icons/google.png';
 import github from './../../Assets/icons/github.png';
 import { NavLink } from 'react-router-dom';
+import useAuth from './../hooks/useAuth.js';
 
 
 const Login = () => {
+
+    const { signInWithGoogle } = useAuth();
+
     return (
         <Container>
             <div className="text-center my-4">
@@ -55,14 +59,11 @@ const Login = () => {
                     </Form>
                 </div>
 
-                <p className="mt-4"><h2>Or Login with</h2></p>
+                <h2 className="mt-4">Or Login with</h2>
                 <div>
-                    <button className="btn">
+                    <button className="btn" onClick={signInWithGoogle}>
                         <img src={google} width="46px" alt="google-icon" />
                     </button>
-                    {/* <button  className="btn">
-                    <img width="50px" src={facebook} alt="facebook-icon" />
-                </button> */}
                     <button className="btn"> <img width="55px"
                         src={github}
                         alt="github-icon"

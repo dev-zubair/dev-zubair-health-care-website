@@ -12,46 +12,55 @@ import AboutUs from './Pages/AboutUs/AboutUs.js';
 import Login from './Pages/Login/Login.js';
 import Footer from './Pages/Shared/Footer/Footer.js';
 import SignUp from './Pages/Signup/Signup.js';
+import AuthProvider from './Pages/context/AuthProvider.js';
+import Contact from './Pages/Contact/Contact.js';
 
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header></Header>
-        <Switch>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
 
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
 
-          <Route path="/home">
-            <Home></Home>
-          </Route>
+            <Route path="/home">
+              <Home></Home>
+            </Route>
 
-          <Route path="/services">
-            <Services></Services>
-          </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
 
-          <Route path="/about">
-            <AboutUs></AboutUs>
-          </Route>
+            <Route path="/about">
+              <AboutUs></AboutUs>
+            </Route>
 
-          <Route path="/login">
-            <Login></Login>
-          </Route>
 
-          <Route path="/signup">
-            <SignUp></SignUp>
-          </Route>
+            <Route path="/contact">
+              <Contact></Contact>
+            </Route>
 
-          <Route path="*">
-            <NotFoundPage></NotFoundPage>
-          </Route>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
 
-        </Switch>
-        <Footer></Footer>
-      </Router>
+            <Route path="/signup">
+              <SignUp></SignUp>
+            </Route>
+
+            <Route path="*">
+              <NotFoundPage></NotFoundPage>
+            </Route>
+
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

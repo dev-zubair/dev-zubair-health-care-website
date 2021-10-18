@@ -10,9 +10,12 @@ import YT from './../../../Assets/footer/socialyoutube.png';
 import Twitter from './../../../Assets/footer/socialtwitter.png';
 import Insta from './../../../Assets/footer/socialInsta.png';
 import './Header.css';
+import useAuth from './../../hooks/useAuth';
 
 
 const Header = () => {
+    const { user, logOut } = useAuth();
+
     return (
 
         <div style={{ backgroundColor: "#396CF0" }}>
@@ -44,8 +47,12 @@ const Header = () => {
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/about">About Us</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/services">Services</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/contact">Contact Us</Nav.Link>
-                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/login"><button className="btn-style">Login</button></Nav.Link>
-                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/signup"><button className="btn-style">Sign up</button></Nav.Link>
+                            {user.displayName && <p style={{ color: "blue" }}>Welcome {user.displayName}</p>}:
+                            {user.displayName ?
+                                <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/signup"><button className="btn-style" onClick={logOut}>Sign Out</button></Nav.Link>
+                                :
+                                <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/login"><button className="btn-style">Login</button></Nav.Link>}
+                            {/* <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/signup"><button className="btn-style">Sign up</button></Nav.Link> */}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
