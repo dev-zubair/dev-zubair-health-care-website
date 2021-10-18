@@ -11,6 +11,7 @@ import Header from './Pages/Shared/Header/Header.js';
 import AboutUs from './Pages/AboutUs/AboutUs.js';
 import Login from './Pages/Login/Login.js';
 import Footer from './Pages/Shared/Footer/Footer.js';
+import SignUp from './Pages/Signup/Signup.js';
 
 
 function App() {
@@ -38,6 +39,10 @@ function App() {
 
           <Route path="/login">
             <Login></Login>
+          </Route>
+
+          <Route path="/signup">
+            <SignUp></SignUp>
           </Route>
 
           <Route path="*">

@@ -45,6 +45,7 @@ const Header = () => {
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/services">Services</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/contact">Contact Us</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/login"><button className="btn-style">Login</button></Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/signup"><button className="btn-style">Sign up</button></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
