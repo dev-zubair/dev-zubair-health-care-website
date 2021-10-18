@@ -3,7 +3,7 @@ import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import headerLogo from './../../../Assets/footer/main-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock, faHome, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faClock, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import FB from './../../../Assets/footer/socialFB.png';
 import Linkedin from './../../../Assets/footer/sociallinkedin.png';
 import YT from './../../../Assets/footer/socialyoutube.png';
@@ -39,7 +39,7 @@ const Header = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/"><FontAwesomeIcon icon={faHome} /> Home</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/"> Home</Nav.Link>
                             <Nav.Link className="text-white fw-bolder" as={NavLink} to="/about">About Us</Nav.Link>
                             <Nav.Link className="text-white fw-bolder" as={NavLink} to="/services">Services</Nav.Link>
                             <Nav.Link className="text-white fw-bolder" as={NavLink} to="/contact">Contact Us</Nav.Link>
