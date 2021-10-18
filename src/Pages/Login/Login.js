@@ -49,34 +49,24 @@ const Login = () => {
                         <button type="submit" className="mt-2 w-100 btn-style">
                             Login
                         </button>
+                        <button type="submit" className="mt-2 w-100 signup-btn">
+                            <NavLink className="text-decoration-none" to="/signup"><p>Need an Account? Please Sign up!</p></NavLink>
+                        </button>
                     </Form>
                 </div>
-                <p className="mt-3">
-                    <NavLink className="text-decoration-none" to="/signup">
-                        <button type="submit" className=" btn-style">
-                            <p>Need an Account? Please Sign up!</p>
-                        </button>
-                    </NavLink>
 
-                </p>
                 <p className="mt-4"><h2>Or Login with</h2></p>
-
                 <div>
-                    <button
-
-                        className="btn"
-                    >
+                    <button className="btn">
                         <img src={google} width="46px" alt="google-icon" />
                     </button>
                     {/* <button  className="btn">
                     <img width="50px" src={facebook} alt="facebook-icon" />
                 </button> */}
-                    <button className="btn">
-                        <img
-                            width="55px"
-                            src={github}
-                            alt="github-icon"
-                        />
+                    <button className="btn"> <img width="55px"
+                        src={github}
+                        alt="github-icon"
+                    />
                     </button>
                 </div>
             </div>

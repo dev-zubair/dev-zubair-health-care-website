@@ -75,16 +75,11 @@ const SignUp = () => {
                     <button type="submit" className="mt-2 w-100 btn-style">
                         Sign Up
                     </button>
+                    <button type="submit" className="mt-2 w-100 signup-btn">
+                        <NavLink className="text-decoration-none" to="/login"><p>Have an account? Please login!</p></NavLink>
+                    </button>
                 </Form>
             </div>
-            <p className="mt-2">
-                <NavLink className="text-decoration-none" to="/login">
-                    <button type="submit" className="mt-2 btn-style">
-                        <p>Have an account? Please login!</p>
-                    </button>
-                </NavLink>
-            </p>
-
         </div>
     );
 };
