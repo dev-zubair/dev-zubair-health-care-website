@@ -6,3 +6,18 @@
 .service img {
     width: 100%;
 }
+
+.btn-style {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px 30px;
+    color: black;
+    border: 3px solid #396cf0;
+    border-radius: 5px;
+}
+
+.btn-style:hover {
+    background-color: #396cf0;
+    color: whitesmoke;
+
+}

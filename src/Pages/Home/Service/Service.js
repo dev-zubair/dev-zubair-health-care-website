@@ -14,7 +14,7 @@ const Service = ({ service }) => {
                 <p>{description}</p>
             </div>
             <div className="text-center">
-                <button className="btn-danger fs-5 fw-bolder p-2 w-50">View Details</button>
+                <button className="btn-style">Book An Appoingment</button>
             </div>
         </div>
     );
