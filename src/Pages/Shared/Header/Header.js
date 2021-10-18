@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
+import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import headerLogo from './../../../Assets/footer/main-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,6 +9,7 @@ import Linkedin from './../../../Assets/footer/sociallinkedin.png';
 import YT from './../../../Assets/footer/socialyoutube.png';
 import Twitter from './../../../Assets/footer/socialtwitter.png';
 import Insta from './../../../Assets/footer/socialInsta.png';
+import './Header.css';
 
 
 const Header = () => {
@@ -38,15 +39,12 @@ const Header = () => {
                     <Navbar.Brand href="#home"><img src={headerLogo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="ms-auto">
-                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/"> Home</Nav.Link>
-                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/about">About Us</Nav.Link>
-                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/services">Services</Nav.Link>
-                            <Nav.Link className="text-white fw-bolder" as={NavLink} to="/contact">Contact Us</Nav.Link>
-                            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                                <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-
-                            </NavDropdown>
+                        <Nav className="ms-auto align-items-center ">
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/"> Home</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/about">About Us</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/services">Services</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/contact">Contact Us</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/login"><button className="btn-style">Login</button></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -1,5 +1,8 @@
 import React from 'react';
 import './Service.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserMd } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
 
@@ -7,14 +10,14 @@ const Service = ({ service }) => {
 
     return (
         <div className="service pb-3">
-            <div className="text-center">
+            <div className="text-center ">
                 <img src={img} alt="" />
-                <h2>{name}</h2>
-                <h5>4 {doctors}</h5>
+                <h3>{name}</h3>
+                <h5><FontAwesomeIcon icon={faUserMd} /> 4 {doctors}</h5>
                 <p>{description}</p>
             </div>
             <div className="text-center">
-                <button className="btn-style">Book An Appoingment</button>
+                <Link to="/services"><button className="btn-style">Book An Appoingment</button></Link>
             </div>
         </div>
     );
