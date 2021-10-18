@@ -13,9 +13,9 @@ const Login = () => {
         <Container>
             <div className="text-center my-4">
                 <h2>Please Login</h2>
-                <p className=" mt-2">Login with Email & Password</p>
+                <h5 className=" mt-2">Login with Email & Password</h5>
                 <p className="text-danger text-center">{ }</p>
-                <div className="w-25 mx-auto">
+                <div className="form-container mx-auto">
                     <Form>
                         <Row>
                             <Col className="text-start">
@@ -51,13 +51,16 @@ const Login = () => {
                         </button>
                     </Form>
                 </div>
-                <p className="mt-2">
+                <p className="mt-3">
                     <NavLink className="text-decoration-none" to="/signup">
-                        Need an Account? Please Sign up!
+                        <button type="submit" className=" btn-style">
+                            <p>Need an Account? Please Sign up!</p>
+                        </button>
                     </NavLink>
+
                 </p>
-                <p className="mt-3">Or</p>
-                <p> Login with</p>
+                <p className="mt-4"><h2>Or Login with</h2></p>
+
                 <div>
                     <button
 

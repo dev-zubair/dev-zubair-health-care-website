@@ -16,9 +16,9 @@ const SignUp = () => {
     return (
         <div className="text-center my-4">
             <h2>Please Sign Up</h2>
-            <p className=" mt-2">Sign Up with Email & Password</p>
+            <h5 className=" mt-2">Sign Up with Email & Password</h5>
             <p className="text-danger text-center"></p>
-            <div className="w-25 mx-auto">
+            <div className="form-container mx-auto">
                 <Form>
                     <Row>
                         <Col className="text-start">
@@ -79,7 +79,9 @@ const SignUp = () => {
             </div>
             <p className="mt-2">
                 <NavLink className="text-decoration-none" to="/login">
-                    Already have an account? Please login!
+                    <button type="submit" className="mt-2 btn-style">
+                        <p>Have an account? Please login!</p>
+                    </button>
                 </NavLink>
             </p>
 
