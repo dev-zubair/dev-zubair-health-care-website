@@ -33,7 +33,7 @@ const Header = () => {
                     </Col>
                 </Row>
             </Container>
-            <Navbar style={{ backgroundColor: "#008CB4" }} expand="lg">
+            <Navbar style={{ backgroundColor: "lightseagreen" }} expand="lg">
                 <Container>
                     <Navbar.Brand href="#home"><img src={headerLogo} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />

@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Eye Care",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/D7JzRJW/Eye-Care.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dental Care",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/9cmbJ6V/Dental-Care.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Orthopedic",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/5RjsJm0/Orthopedic.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cardiology",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/jkS0mDp/Cardiology.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Primary Care",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "img": "https://i.ibb.co/W27bJg7/Primary-Care.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Medicine",
+        "doctors": "Specialist Docotrs",
+        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "img": "https://i.ibb.co/fGZVqP7/Medicine.jpg"
+    }
+]
