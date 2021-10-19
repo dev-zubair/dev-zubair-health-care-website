@@ -69,7 +69,7 @@ function ContactForm() {
                                 <h1>Address</h1>
                             </Bounce>
                             <Bounce top>
-                                <h5 className="mt-5 mb-4"><FontAwesomeIcon icon={faHospital} /> Medilink Technological Limited</h5>
+                                <h5 className="mt-5 mb-4"><FontAwesomeIcon icon={faHospital} /> Medilink Central Hospital</h5>
                                 <h6 className="mb-4"><FontAwesomeIcon icon={faMapMarkerAlt} /> Tongi, Gazipur, Dhaka</h6>
                                 <h6 className="mb-4"><FontAwesomeIcon icon={faEnvelope} /> zubairhmd84 @gmail.com</h6>
                                 <h6 className="mb-4"><FontAwesomeIcon icon={faPhone} /> 01619141476</h6>

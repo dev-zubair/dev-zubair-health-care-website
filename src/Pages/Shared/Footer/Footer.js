@@ -65,7 +65,6 @@ const Footer = () => {
                                 <li><NavLink to="/about"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">About us</span></NavLink></li>
                                 <li><NavLink to="/services"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Services</span></NavLink></li>
                                 <li><NavLink to="/contact"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Contact us</span></NavLink></li>
-                                <li><NavLink to=""><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Policy</span></NavLink></li>
 
                             </ul>
                         </div>
