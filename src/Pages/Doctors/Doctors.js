@@ -13,23 +13,23 @@ const Doctors = () => {
 
             <Container className="mt-5">
                 <Row>
-                    {/* <Col>
-                        <img src={Robert} alt="" />
-                    </Col> */}
+                    <Col>
+                        <img style={{ width: "350px" }} src={Robert} alt="" />
+                    </Col>
 
-                    {/* <Col className="d-flex align-content-center justify-content-center align-items-center"> */}
-                    <div>
-                        <h1 className="text-center mb-5">Welcome To MediLink. <br />
-                            Central Hospital</h1>
-                        <p>MediLink Central Hospital is one of the largest and most recognized private healthcare brands in Bangladesh. Known for its pioneering works in setting-up the first super-specialty Cardiac hospital within country. MediLink Central Hospital is also widely acknowledged for bringing high quality diagnostic & specialized consultation facilities under a single roof through its now ubiquitous centers in all corners of Bangladesh. Around 2.1</p>
-                    </div>
-                    {/* </Col> */}
+                    <Col className="d-flex align-content-center justify-content-center align-items-center mt-5">
+                        <div>
+                            <h1 className="text-center mb-5">Welcome To MediLink. <br />
+                                Central Hospital</h1>
+                            <p>MediLink Central Hospital is one of the largest and most recognized private healthcare brands in Bangladesh. Known for its pioneering works in setting-up the first super-specialty Cardiac hospital within country. MediLink Central Hospital is also widely acknowledged for bringing high quality diagnostic & specialized consultation facilities under a single roof through its now ubiquitous centers in all corners of Bangladesh. Around 2.1</p>
+                        </div>
+                    </Col>
                 </Row >
             </Container >
 
             <Container >
                 <Row>
-                    <h1 className="text-center text-white mt-4 mb-4">Our Doctors</h1>
+                    <h1 className="text-center mt-4 mb-4">Our Doctors</h1>
                     <Col className="text-center">
                         <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
                             <Image src={doctor1} roundedCircle />

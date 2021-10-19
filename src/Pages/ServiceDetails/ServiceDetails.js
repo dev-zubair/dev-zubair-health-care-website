@@ -10,9 +10,9 @@ const ServiceDetails = () => {
     return (
         <div>
             <Container className="mt-5 mb-5 text-center">
-                <Row>
+                <Row >
                     <Col>
-                        <img style={{ width: "300px" }} src={selected.img} alt="" />
+                        <img style={{ width: "350px" }} src={selected.img} alt="" />
                     </Col>
                     <Col>
                         <h1>{selected.name}</h1>
