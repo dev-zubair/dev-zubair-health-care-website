@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router';
 import useAuth from '../hooks/useAuth.js';
 
@@ -9,8 +9,18 @@ const ServiceDetails = () => {
     const selected = services.find(service => service.id === Number(id))
     return (
         <div>
-            <Container>
-                <h1>{selected.name}</h1>
+            <Container className="mt-5 mb-5 text-center">
+                <Row>
+                    <Col>
+                        <img style={{ width: "300px" }} src={selected.img} alt="" />
+                    </Col>
+                    <Col>
+                        <h1>{selected.name}</h1>
+                        <h1>{selected.doctors}</h1>
+                        <p>{selected.description}</p>
+                    </Col>
+                </Row>
+
             </Container>
         </div>
     );
