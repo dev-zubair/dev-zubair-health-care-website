@@ -6,7 +6,7 @@ const AboutUs = () => {
     return (
         <div>
             <div style={{ background: `url(${SectionBg})`, backgroundAttachment: "fixed" }}>
-                <h1 className="text-white text-center p-5">About Medilink Technological Limited</h1>
+                <h1 className="text-white text-center p-5">About Us</h1>
             </div>
             <Doctors></Doctors>
         </div>
