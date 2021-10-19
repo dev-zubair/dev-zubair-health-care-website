@@ -10,8 +10,7 @@ import useAuth from './../hooks/useAuth.js';
 
 
 const Login = () => {
-
-    const { signInWithGoogle } = useAuth();
+    const { signInWithGoogle, signInWithGitHub } = useAuth();
 
     return (
         <Container>
@@ -64,7 +63,7 @@ const Login = () => {
                     <button className="btn" onClick={signInWithGoogle}>
                         <img width="46px" src={google} alt="google-icon" />
                     </button>
-                    <button className="btn">
+                    <button className="btn" onClick={signInWithGitHub}>
                         <img width="55px" src={github} alt="github-icon" />
                     </button>
                 </div>

@@ -14,6 +14,7 @@ import Footer from './Pages/Shared/Footer/Footer.js';
 import SignUp from './Pages/Signup/Signup.js';
 import AuthProvider from './Pages/context/AuthProvider.js';
 import Contact from './Pages/Contact/Contact.js';
+import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute.js';
 
 
 function App() {
@@ -32,9 +33,9 @@ function App() {
               <Home></Home>
             </Route>
 
-            <Route path="/services">
+            <PrivateRoute path="/services">
               <Services></Services>
-            </Route>
+            </PrivateRoute>
 
             <Route path="/about">
               <AboutUs></AboutUs>
