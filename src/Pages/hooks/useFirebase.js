@@ -2,12 +2,10 @@ import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signO
 import { useEffect, useState } from "react";
 import initializationAuthentication from "../Firebase/Firebase.init.js";
 
-
 initializationAuthentication();
 
 // Providers 
 const googleProvider = new GoogleAuthProvider();
-// const gitHubProvider = new GithubAuthProvider();
 
 const useFirebase = () => {
 
@@ -37,17 +35,6 @@ const useFirebase = () => {
         return signInWithPopup(auth, googleProvider)
 
     }
-    // GitHub Sign In
-    // const signInWithGitHub = () => {
-    //     signInWithPopup(auth, gitHubProvider)
-    //         .then(result => {
-    //             setUser(result.user);
-    //             console.log(user);
-    //         })
-    //     .catch((error) => {
-    //         setError(error.message);
-    //     })
-    // }
 
     // Google Sign Out
     const logOut = () => {
@@ -57,7 +44,6 @@ const useFirebase = () => {
                 setError(error.message);
             })
     }
-
 
     // set name and profile image url
     function setNameAndImage() {
@@ -70,8 +56,6 @@ const useFirebase = () => {
                 setError(error.message);
             });
     }
-
-
 
     // user signed in
     useEffect(() => {

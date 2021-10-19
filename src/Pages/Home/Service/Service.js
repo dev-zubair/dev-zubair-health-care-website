@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUserMd } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
+
 const Service = ({ service }) => {
 
     const { name, doctors, id, description, img } = service;
@@ -20,6 +21,7 @@ const Service = ({ service }) => {
                 <Link to={`/services/${id}`}><button className="btn-style">Book An Appoingment</button></Link>
             </div>
         </div>
+
     );
 };
 

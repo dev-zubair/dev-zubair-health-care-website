@@ -3,8 +3,7 @@ import { Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootst
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
-import google from './../../Assets/icons/google.png';
-import github from './../../Assets/icons/github.png';
+import google from './../../Assets/icons/google-signin.png';
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from './../hooks/useAuth.js';
 
@@ -12,7 +11,7 @@ import useAuth from './../hooks/useAuth.js';
 const Login = () => {
     const { allContexts } = useAuth();
 
-    const { signInWithEmail, setUser, setError, error, signInWithGoogle, signInWithGitHub, getPassword, getEmail, } = allContexts;
+    const { signInWithEmail, setUser, setError, error, signInWithGoogle, getPassword, getEmail, } = allContexts;
 
     const location = useLocation();
     const history = useHistory();
@@ -84,10 +83,7 @@ const Login = () => {
                 <h2 className="mt-4">Or Login with</h2>
                 <div>
                     <button className="btn" onClick={handleGoogleLogin}>
-                        <img width="46px" src={google} alt="google-icon" />
-                    </button>
-                    <button className="btn" onClick={signInWithGitHub}>
-                        <img width="55px" src={github} alt="github-icon" />
+                        <img width="45%" src={google} alt="google-icon" />
                     </button>
                 </div>
             </div>
