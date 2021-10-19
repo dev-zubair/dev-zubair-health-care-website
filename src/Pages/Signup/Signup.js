@@ -4,16 +4,18 @@ import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
 import { faEnvelope, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import './Signup.css';
+import useAuth from "../hooks/useAuth.js";
 
 
 const SignUp = () => {
+    const { signUp, getName, getPassword, getEmail, error } = useAuth();
     return (
         <div className="text-center my-4">
             <h2>Please Sign Up</h2>
             <h5 className=" mt-2">Sign Up with Email & Password</h5>
-            <p className="text-danger text-center"></p>
+            <p className="text-danger text-center">{error}</p>
             <div className="form-container mx-auto">
-                <Form>
+                <Form onSubmit={signUp}>
                     <Row>
                         <Col className="text-start">
                             <Form.Label htmlFor="name" visuallyHidden>
@@ -23,7 +25,7 @@ const SignUp = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faUser}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl type="text" autoComplete="current-text" id="name" placeholder="Enter your name" /></InputGroup>
+                                <FormControl required onBlur={getName} type="text" autoComplete="current-text" id="name" placeholder="Enter your name" /></InputGroup>
                         </Col>
                     </Row>
 
@@ -36,7 +38,7 @@ const SignUp = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
+                                <FormControl required onBlur={getEmail} type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
                                 />
                             </InputGroup>
                         </Col>
@@ -51,7 +53,7 @@ const SignUp = () => {
                                 <InputGroup.Text>
                                     <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
                                 </InputGroup.Text>
-                                <FormControl type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
+                                <FormControl required onBlur={getPassword} type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
                             </InputGroup>
                         </Col>
                     </Row>

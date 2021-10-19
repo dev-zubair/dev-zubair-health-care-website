@@ -53,7 +53,7 @@ const Header = () => {
 
                             {/* <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/signup"><button className="btn-style" onClick={logOut}>Sign Out</button></Nav.Link> */}
 
-                            {!user.displayName ? (
+                            {!user.email ? (
                                 <>
                                     <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/login"><button className="btn-style">Login</button></Nav.Link>
 

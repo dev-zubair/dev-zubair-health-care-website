@@ -10,16 +10,27 @@ import useAuth from './../hooks/useAuth.js';
 
 
 const Login = () => {
-    const { signInWithGoogle, signInWithGitHub } = useAuth();
+    const { signInWithEmail, setUser, setError, error, signInWithGoogle, signInWithGitHub, getPassword, getEmail, } = useAuth();
+
+
 
     return (
         <Container>
             <div className="text-center my-4">
                 <h2>Please Login</h2>
                 <h5 className=" mt-2">Login with Email & Password</h5>
-                <p className="text-danger text-center">{ }</p>
+                <p className="text-danger text-center">{error}</p>
                 <div className="form-container mx-auto">
-                    <Form>
+                    <Form onSubmit={(e) => {
+                        e.preventDefault();
+                        signInWithEmail()
+                            .then(result => {
+                                setUser(result.user);
+                            })
+                            .catch((error) => {
+                                setError(error.message);
+                            })
+                    }}>
                         <Row>
                             <Col className="text-start">
                                 <Form.Label htmlFor="email" visuallyHidden>
@@ -29,7 +40,7 @@ const Login = () => {
                                     <InputGroup.Text>
                                         <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                                     </InputGroup.Text>
-                                    <FormControl type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
+                                    <FormControl onBlur={getEmail} type="email" autoComplete="current-email" id="email" placeholder="Enter your email address"
                                     />
                                 </InputGroup>
                             </Col>
@@ -43,13 +54,13 @@ const Login = () => {
                                     <InputGroup.Text>
                                         <FontAwesomeIcon icon={faLock}></FontAwesomeIcon>
                                     </InputGroup.Text>
-                                    <FormControl type="password" autoComplete="current-password" id="password" placeholder="Enter your password"
+                                    <FormControl onBlur={getPassword} type="password" autoComplete="current-password" id="password" placeholder="Enter your password"
                                     />
                                 </InputGroup>
                             </Col>
                         </Row>
 
-                        <button type="submit" className="mt-2 w-100 btn-style">
+                        <button onClick={signInWithEmail} type="submit" className="mt-2 w-100 btn-style">
                             Login
                         </button>
                         <button type="submit" className="mt-2 w-100 signup-btn">
