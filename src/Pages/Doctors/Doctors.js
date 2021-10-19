@@ -3,16 +3,30 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 import doctor1 from './../../Assets/doctors/doctor-1.jpg';
 import doctor2 from './../../Assets/doctors/doctor-2.jpg';
 import doctor3 from './../../Assets/doctors/doctor-3.jpg';
+import Robert from './../../Assets/doctors/robert.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
-
-
-
-
 
 const Doctors = () => {
     return (
         <div>
+
+            <Container className="mt-5">
+                <Row>
+                    {/* <Col>
+                        <img src={Robert} alt="" />
+                    </Col> */}
+
+                    {/* <Col className="d-flex align-content-center justify-content-center align-items-center"> */}
+                    <div>
+                        <h1 className="text-center mb-5">Welcome To MediLink. <br />
+                            Central Hospital</h1>
+                        <p>MediLink Central Hospital is one of the largest and most recognized private healthcare brands in Bangladesh. Known for its pioneering works in setting-up the first super-specialty Cardiac hospital within country. MediLink Central Hospital is also widely acknowledged for bringing high quality diagnostic & specialized consultation facilities under a single roof through its now ubiquitous centers in all corners of Bangladesh. Around 2.1</p>
+                    </div>
+                    {/* </Col> */}
+                </Row >
+            </Container >
+
             <Container >
                 <Row>
                     <h1 className="text-center text-white mt-4 mb-4">Our Doctors</h1>

@@ -15,6 +15,7 @@ import SignUp from './Pages/Signup/Signup.js';
 import AuthProvider from './Pages/context/AuthProvider.js';
 import Contact from './Pages/Contact/Contact.js';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute.js';
+import ServiceDetails from './Pages/ServiceDetails/ServiceDetails.js';
 
 
 function App() {
@@ -33,12 +34,16 @@ function App() {
               <Home></Home>
             </Route>
 
-            <PrivateRoute path="/services">
-              <Services></Services>
+            <PrivateRoute path="/services/:id">
+              <ServiceDetails />
             </PrivateRoute>
 
             <Route path="/about">
               <AboutUs></AboutUs>
+            </Route>
+
+            <Route path="/services">
+              <Services></Services>
             </Route>
 
 

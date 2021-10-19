@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
 
-    const { name, doctors, description, img } = service;
+    const { name, doctors, id, description, img } = service;
 
     return (
         <div className="service pb-3">
@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                 <p>{description}</p>
             </div>
             <div className="text-center">
-                <Link to="/services"><button className="btn-style">Book An Appoingment</button></Link>
+                <Link to={`/services/${id}`}><button className="btn-style">Book An Appoingment</button></Link>
             </div>
         </div>
     );

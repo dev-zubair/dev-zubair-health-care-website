@@ -14,7 +14,8 @@ import useAuth from './../../hooks/useAuth';
 
 
 const Header = () => {
-    const { user, logOut } = useAuth();
+    const { allContexts } = useAuth();
+    const { user, logOut } = allContexts;
     const { displayName, photoURL, email } = user;
 
     return (

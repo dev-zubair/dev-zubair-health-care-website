@@ -4,8 +4,8 @@ import { Route, Redirect } from 'react-router-dom';
 import { Spinner } from 'react-bootstrap';
 
 const PrivateRoute = ({ children, ...rest }) => {
-    const { user, loading } = useAuth();
-
+    const { allContexts } = useAuth();
+    const { user, loading } = allContexts;
     if (loading) {
         return (
             <div className="text-center my-5 py-5">

@@ -10,7 +10,9 @@ import useAuth from './../hooks/useAuth.js';
 
 
 const Login = () => {
-    const { signInWithEmail, setUser, setError, error, signInWithGoogle, signInWithGitHub, getPassword, getEmail, } = useAuth();
+    const { allContexts } = useAuth();
+
+    const { signInWithEmail, setUser, setError, error, signInWithGoogle, signInWithGitHub, getPassword, getEmail, } = allContexts;
 
     const location = useLocation();
     const history = useHistory();

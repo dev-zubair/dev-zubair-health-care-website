@@ -16,8 +16,8 @@ const Slider = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h1>Welcome To MediLink Hospital</h1>
+                        {/* <p>Care for patients since 1832.</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -28,8 +28,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h1>We Take Care Of Your Healthy Health</h1>
+                        {/* <p>Full spectrum of heart disease and disorders</p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -40,8 +40,8 @@ const Slider = () => {
                     />
 
                     <Carousel.Caption className="text-dark">
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h1>World-Class Primary Care Services</h1>
+                        {/* <p>Your primary care physician is the leader of your health care team. </p> */}
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

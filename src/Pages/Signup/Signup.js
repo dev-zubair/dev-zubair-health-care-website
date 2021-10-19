@@ -8,7 +8,10 @@ import useAuth from "../hooks/useAuth.js";
 
 
 const SignUp = () => {
-    const { signUp, getName, getPassword, getEmail, error, getPhoto } = useAuth();
+    const { allContexts } = useAuth();
+
+
+    const { signUp, getName, getPassword, getEmail, error, getPhoto } = allContexts;
     return (
         <div className="text-center my-4">
             <h2>Please Sign Up</h2>
