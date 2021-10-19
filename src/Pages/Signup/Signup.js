@@ -1,14 +1,14 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Form, FormControl, InputGroup, Row } from "react-bootstrap";
-import { faEnvelope, faUser, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faUser, faLock, faLink } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import './Signup.css';
 import useAuth from "../hooks/useAuth.js";
 
 
 const SignUp = () => {
-    const { signUp, getName, getPassword, getEmail, error } = useAuth();
+    const { signUp, getName, getPassword, getEmail, error, getPhoto } = useAuth();
     return (
         <div className="text-center my-4">
             <h2>Please Sign Up</h2>
@@ -55,6 +55,18 @@ const SignUp = () => {
                                 </InputGroup.Text>
                                 <FormControl required onBlur={getPassword} type="password" autoComplete="current-password" id="password" placeholder="Enter your password" />
                             </InputGroup>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col className="text-start">
+                            <Form.Label htmlFor="name" visuallyHidden>
+                                Your Profile Photo
+                            </Form.Label>
+                            <InputGroup className="mb-2">
+                                <InputGroup.Text>
+                                    <FontAwesomeIcon icon={faLink}></FontAwesomeIcon>
+                                </InputGroup.Text>
+                                <FormControl required onBlur={getPhoto} type="text" autoComplete="current-text" id="photo" placeholder="Enter your real photo url" /></InputGroup>
                         </Col>
                     </Row>
                     <button type="submit" className="mt-2 w-100 btn-style">

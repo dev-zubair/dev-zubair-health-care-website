@@ -73,9 +73,13 @@ const Header = () => {
                                     }
                                 >
                                     <div className="text-center p-2 fw-bolder card-style">
-                                        <img src={photoURL} alt="" />
-                                        <h6 className="mt-3">{displayName}</h6>
-                                        <p className="m-0 mb-2">{email}</p>
+                                        <img style={{
+                                            width: "50%",
+                                            borderRadius: "50%",
+                                        }} src={photoURL} alt="" />
+                                        <h6 className="mt-3">Welcome Back</h6>
+                                        <h6>{displayName}</h6>
+                                        <h6 className="m-0 mb-2">{email}</h6>
                                         <button onClick={logOut} className="btn-style">
                                             Sign Out
                                         </button>
