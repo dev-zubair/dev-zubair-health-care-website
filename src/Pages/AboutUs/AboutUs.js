@@ -1,10 +1,13 @@
 import React from 'react';
 import Doctors from './../Doctors/Doctors.js'
+import SectionBg from './../../Assets/footer/footer-bg.jpg';
 
 const AboutUs = () => {
     return (
         <div>
-            <h1>This is About page</h1>
+            <div style={{ background: `url(${SectionBg})`, backgroundAttachment: "fixed" }}>
+                <h1 className="text-white text-center p-5">About Medilink Technological Limited</h1>
+            </div>
             <Doctors></Doctors>
         </div>
     );

@@ -9,14 +9,15 @@ import { faFacebookSquare, faLinkedin, faTwitterSquare } from '@fortawesome/free
 
 
 
+
 const Doctors = () => {
     return (
-        <div style={{ backgroundColor: "#0f2738" }}>
+        <div>
             <Container >
                 <Row>
                     <h1 className="text-center text-white mt-4 mb-4">Our Doctors</h1>
                     <Col className="text-center">
-                        <Card className="bg-primary text-center p-5 mb-4" style={{ width: '22rem', border: "0" }}>
+                        <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
                             <Image src={doctor1} roundedCircle />
                             <Card.Body className="text-white">
                                 <Card.Title>Dr. Jason Roy</Card.Title>
@@ -31,7 +32,7 @@ const Doctors = () => {
                         </Card>
                     </Col>
                     <Col className="text-center">
-                        <Card className="bg-primary text-center p-5 mb-4" style={{ width: '22rem', border: "0" }}>
+                        <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
                             <Image src={doctor2} roundedCircle />
                             <Card.Body className="text-white">
                                 <Card.Title>Dr. Zinia Zara</Card.Title>
@@ -45,7 +46,7 @@ const Doctors = () => {
                         </Card>
                     </Col>
                     <Col className="text-center">
-                        <Card className="bg-primary text-center p-5 mb-4" style={{ width: '22rem', border: "0" }}>
+                        <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
                             <Image src={doctor3} roundedCircle />
                             <Card.Body className="text-white">
                                 <Card.Title>Dr. Mark Willy</Card.Title>
