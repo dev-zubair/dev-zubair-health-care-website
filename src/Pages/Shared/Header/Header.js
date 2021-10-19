@@ -39,7 +39,9 @@ const Header = () => {
             </Container>
             <Navbar style={{ backgroundColor: "lightseagreen" }} expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home"><img src={headerLogo} alt="" /></Navbar.Brand>
+                    <Navbar.Brand>
+                        <NavLink s={NavLink} to="/"><img src={headerLogo} alt="" /></NavLink>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto align-items-center ">

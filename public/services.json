@@ -3,42 +3,42 @@
         "id": 1,
         "name": "Eye Care",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "We provided comprehensive ophthalmology care for patients since 1832. Our skilled physicians and staff are dedicated to improving and preserving and globally.",
         "img": "https://i.ibb.co/D7JzRJW/Eye-Care.jpg"
     },
     {
         "id": 2,
         "name": "Dental Care",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "We serve patients in specialized branches including the Cosmetic Dentistry, Laser Dentistry, Advanced Implantation, Advanced Oral & Maxillofacial Surgery.",
         "img": "https://i.ibb.co/9cmbJ6V/Dental-Care.jpg"
     },
     {
         "id": 3,
         "name": "Orthopedic",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "We awarded the best hospitals for cardiology, oncology and endocrinology, we conclude this year's ranking with the best hospitals for neurology, gastroenterology and orthopedics.",
         "img": "https://i.ibb.co/5RjsJm0/Orthopedic.jpg"
     },
     {
         "id": 4,
         "name": "Cardiology",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Our cardiologists, cardiac surgeons treat the full spectrum of heart disease and disorders, while our investigators continue to advance the field with groundbreaking.",
         "img": "https://i.ibb.co/jkS0mDp/Cardiology.jpg"
     },
     {
         "id": 5,
         "name": "Primary Care",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
+        "description": "Your primary care physician is the leader of your health care team. He or she works with other doctors, nurse practitioners and physician assistants. ",
         "img": "https://i.ibb.co/W27bJg7/Primary-Care.jpg"
     },
     {
         "id": 6,
         "name": "Medicine",
         "doctors": "Specialist Docotrs",
-        "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa",
+        "description": "Medilink Technological Limited are the world-class primary care services, including internal medicine, family medicine and general pediatrics, are now closer to home.",
         "img": "https://i.ibb.co/fGZVqP7/Medicine.jpg"
     }
 ]

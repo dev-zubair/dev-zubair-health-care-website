@@ -62,12 +62,10 @@ const Login = () => {
                 <h2 className="mt-4">Or Login with</h2>
                 <div>
                     <button className="btn" onClick={signInWithGoogle}>
-                        <img src={google} width="46px" alt="google-icon" />
+                        <img width="46px" src={google} alt="google-icon" />
                     </button>
-                    <button className="btn"> <img width="55px"
-                        src={github}
-                        alt="github-icon"
-                    />
+                    <button className="btn">
+                        <img width="55px" src={github} alt="github-icon" />
                     </button>
                 </div>
             </div>

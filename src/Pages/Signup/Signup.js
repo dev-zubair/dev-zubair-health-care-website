@@ -58,6 +58,7 @@ const SignUp = () => {
                     <button type="submit" className="mt-2 w-100 btn-style">
                         Sign Up
                     </button>
+                    <h6 className="m-3 text-danger">By creating an account, I agree to the Terms of Service, Privacy Policy, and Cookie Policy.</h6>
                     <button type="submit" className="mt-2 w-100 signup-btn">
                         <NavLink className="text-decoration-none" to="/login"><p>Have an account? Please login!</p></NavLink>
                     </button>
