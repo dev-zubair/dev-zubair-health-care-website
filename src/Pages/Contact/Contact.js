@@ -56,9 +56,11 @@ function ContactForm() {
                                         <Form.Label>Your Messages</Form.Label>
                                         <Form.Control style={formStyle} placeholder="Write you message..." as="textarea" rows={3} />
                                     </Form.Group>
-                                    <Button className="mb-5 px-4" variant="primary" type="submit">
-                                        Submit
-                                    </Button>
+                                    <div className="text-center">
+                                        <Button className="mb-5 px-5" variant="primary" type="submit">
+                                            Submit
+                                        </Button>
+                                    </div>
                                 </Form>
                             </Slide>
                         </Col>

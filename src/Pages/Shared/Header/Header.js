@@ -21,7 +21,7 @@ const Header = () => {
     return (
 
         <div style={{ backgroundColor: "#396CF0" }}>
-            <Container>
+            <Container className="top-bar">
                 <Row className="text-white text-center fs-6 p-1 align-items-center fw-bolder">
                     <Col md={3}><FontAwesomeIcon icon={faMapMarkerAlt} /> Tongi, Gazipur, Dhaka</Col>
                     <Col md={3}><FontAwesomeIcon icon={faMobileAlt} /> Any Question: +8801619141476</Col>
