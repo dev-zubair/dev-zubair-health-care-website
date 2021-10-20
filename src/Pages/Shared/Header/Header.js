@@ -3,7 +3,7 @@ import { Col, Container, Nav, Navbar, NavDropdown, Row } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import headerLogo from './../../../Assets/footer/main-logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClinicMedical, faClock, faHandHoldingMedical, faMapMarkerAlt, faMobileAlt, faPaperPlane, faUserMd } from '@fortawesome/free-solid-svg-icons';
+import { faClinicMedical, faClock, faHandHoldingMedical, faHospitalUser, faMapMarkerAlt, faMobileAlt, faPaperPlane, faUserMd } from '@fortawesome/free-solid-svg-icons';
 import FB from './../../../Assets/footer/socialFB.png';
 import Linkedin from './../../../Assets/footer/sociallinkedin.png';
 import YT from './../../../Assets/footer/socialyoutube.png';
@@ -48,8 +48,9 @@ const Header = () => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto align-items-center ">
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/"><FontAwesomeIcon icon={faClinicMedical} /> Home</Nav.Link>
-                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/about"><FontAwesomeIcon icon={faUserMd} /> About Us</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/about"><FontAwesomeIcon icon={faHospitalUser} /> About Us</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/services"><FontAwesomeIcon icon={faHandHoldingMedical} /> Services</Nav.Link>
+                            <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/doctors"><FontAwesomeIcon icon={faUserMd} /> Doctors</Nav.Link>
                             <Nav.Link className="text-white fw-bolder fs-5" as={NavLink} to="/contact"><FontAwesomeIcon icon={faPaperPlane} /> Contact Us</Nav.Link>
 
                             {!user.email ? (

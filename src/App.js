@@ -16,6 +16,7 @@ import AuthProvider from './Pages/context/AuthProvider.js';
 import Contact from './Pages/Contact/Contact.js';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute.js';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails.js';
+import Doctors from './Pages/Doctors/Doctors.js';
 
 
 function App() {
@@ -44,6 +45,10 @@ function App() {
 
             <PrivateRoute path="/services">
               <Services></Services>
+            </PrivateRoute>
+
+            <PrivateRoute path="/doctors">
+              <Doctors></Doctors>
             </PrivateRoute>
 
 
