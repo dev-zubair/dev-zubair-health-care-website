@@ -1,8 +1,9 @@
-// import React, { useEffect, useState } from 'react';
 import { Container } from 'react-bootstrap';
 import useAuth from '../../hooks/useAuth.js';
 import Service from '../Service/Service.js';
 import './Services.css'
+import Bounce from "react-reveal/Bounce";
+
 
 const Services = () => {
 
@@ -12,7 +13,15 @@ const Services = () => {
     return (
         <div>
             <Container>
-                <h1 className="text-center m-3">Our Services</h1>
+
+                <Bounce left cascade>
+                    <h1 className="text-center m-3">WHAT WE DO</h1>
+                </Bounce>
+                <Bounce right cascade>
+                    <p className="my-4 mt-2 text-center text-muted fs-5">
+                        Managed Healthcare Services
+                    </p>
+                </Bounce>
                 <div className="services-container">
                     {
                         services.map(service => <Service
