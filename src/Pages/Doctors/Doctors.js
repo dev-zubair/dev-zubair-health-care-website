@@ -52,10 +52,9 @@ const Doctors = () => {
                             Our Dedicated Doctors Team
                         </p>
                     </Zoom>
-
-                    <Col className="text-center">
+                    <Col lg={4} md={4} sm={12} className="text-center">
                         <Bounce left>
-                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
+                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", border: "0" }}>
                                 <Image src={doctor1} roundedCircle />
                                 <Card.Body className="text-white">
                                     <Card.Title>Dr. Jason Roy</Card.Title>
@@ -85,9 +84,9 @@ const Doctors = () => {
                             </Card>
                         </Bounce>
                     </Col>
-                    <Col className="text-center">
+                    <Col lg={4} md={4} sm={12} className="text-center">
                         <Bounce bottom>
-                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
+                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", border: "0" }}>
                                 <Image src={doctor2} roundedCircle />
                                 <Card.Body className="text-white">
                                     <Card.Title>Dr. Zinia Zara</Card.Title>
@@ -117,9 +116,9 @@ const Doctors = () => {
                             </Card>
                         </Bounce>
                     </Col>
-                    <Col className="text-center">
+                    <Col lg={4} md={4} sm={12} className="text-center">
                         <Bounce right>
-                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", width: '22rem', border: "0" }}>
+                            <Card className="text-center p-5 mb-4" style={{ backgroundColor: "#0f2738", border: "0" }}>
                                 <Image src={doctor3} roundedCircle />
                                 <Card.Body className="text-white">
                                     <Card.Title>Dr. Mark Willy</Card.Title>
