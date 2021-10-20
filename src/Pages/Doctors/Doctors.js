@@ -3,8 +3,8 @@ import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 import doctor1 from './../../Assets/doctors/doctor-1.jpg';
 import doctor2 from './../../Assets/doctors/doctor-2.jpg';
 import doctor3 from './../../Assets/doctors/doctor-3.jpg';
-// import Robert from './../../Assets/doctors/robert.png';
-// import RobertSign from './../../Assets/doctors/sign1.png';
+import Robert from './../../Assets/doctors/robert.png';
+import RobertSign from './../../Assets/doctors/sign1.png';
 import Bounce from "react-reveal/Bounce";
 import Zoom from 'react-reveal/Zoom';
 
@@ -16,15 +16,15 @@ const Doctors = () => {
     return (
         <div>
 
-            {/* <Container className="mt-5">
+            <Container className="mt-5">
                 <Row>
                     <Col>
                         <Zoom bottom>
-                            <img style={{ width: "300px" }} src={Robert} alt="" />
+                            <img style={{ width: "350px" }} className="mx-auto" src={Robert} alt="" />
                         </Zoom>
                     </Col>
 
-                    <Col className="d-flex align-content-center justify-content-center align-items-center mt-5">
+                    <Col className="mt-5">
                         <div>
                             <Bounce left>
                                 <h1 className="text-center">Welcome To MediLink. <br />
@@ -40,7 +40,7 @@ const Doctors = () => {
                         </div>
                     </Col>
                 </Row >
-            </Container > */}
+            </Container >
 
             <Container >
                 <Row>
@@ -67,9 +67,9 @@ const Doctors = () => {
                                     <hr />
                                     <div className="d-flex justify-content-between mb-3">
                                         <Col>
-                                            Mon-Tues <br />
-                                            Fri-Sat<br />
-                                            Sun-Mon<br />
+                                            Mon - Tues <br />
+                                            Fri - Sat<br />
+                                            Sun - Mon<br />
                                         </Col>
                                         <Col>
                                             10Am - 5Pm<br />
@@ -99,9 +99,9 @@ const Doctors = () => {
                                     <hr />
                                     <div className="d-flex justify-content-between mb-3">
                                         <Col>
-                                            Mon-Tues <br />
-                                            Fri-Sat<br />
-                                            Sun-Mon<br />
+                                            Mon - Tues <br />
+                                            Fri - Sat<br />
+                                            Sun - Mon<br />
                                         </Col>
                                         <Col>
                                             10Am - 5Pm<br />
@@ -131,9 +131,9 @@ const Doctors = () => {
                                     <hr />
                                     <div className="d-flex justify-content-between mb-3">
                                         <Col>
-                                            Mon-Tues <br />
-                                            Fri-Sat<br />
-                                            Sun-Mon<br />
+                                            Mon - Tues <br />
+                                            Fri - Sat<br />
+                                            Sun - Mon<br />
                                         </Col>
                                         <Col>
                                             10Am - 5Pm<br />
