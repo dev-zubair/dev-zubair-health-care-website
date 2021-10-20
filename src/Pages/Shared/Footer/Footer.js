@@ -11,6 +11,8 @@ import YT from './../../../Assets/footer/socialyoutube.png';
 import Twitter from './../../../Assets/footer/socialtwitter.png';
 import Insta from './../../../Assets/footer/socialInsta.png';
 import footerBG from './../../../Assets/footer/footer-bg.jpg';
+import appsIcon from './../../../Assets/footer/appicon.png'
+
 
 
 
@@ -65,6 +67,7 @@ const Footer = () => {
                                 <li><NavLink to="/about"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">About us</span></NavLink></li>
                                 <li><NavLink to="/services"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Services</span></NavLink></li>
                                 <li><NavLink to="/contact"><FontAwesomeIcon icon={faCaretRight} /> <span className="ms-1">Contact us</span></NavLink></li>
+                                <img className="w-50 mt-5" src={appsIcon} alt="" />
 
                             </ul>
                         </div>

@@ -3,7 +3,8 @@ import { Col, Container, Form, FormControl, InputGroup, Row } from 'react-bootst
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
 import './Login.css';
-import google from './../../Assets/icons/google-signin.png';
+import google from './../../Assets/icons/google-sign.png';
+
 import { NavLink, useLocation, useHistory } from 'react-router-dom';
 import useAuth from './../hooks/useAuth.js';
 
@@ -83,7 +84,7 @@ const Login = () => {
                 <h2 className="mt-4">Or Login with</h2>
                 <div>
                     <button className="btn" onClick={handleGoogleLogin}>
-                        <img width="45%" src={google} alt="google-icon" />
+                        <img width="80%" src={google} alt="google-icon" />
                     </button>
                 </div>
             </div>
