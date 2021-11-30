@@ -4,7 +4,7 @@ Description : MediLink Central Hospital is one of the largest and most recognize
 
 ### Live URL
 
-Project Live url : [https://health-care-website-8715b.web.app/](https://health-care-website-8715b.web.app/)
+Project Live url : [https://medilinkcentralhospital.web.app//](https://medilinkcentralhospital.web.app/)
 
 ## What technology or assets I have used for building this website
 
